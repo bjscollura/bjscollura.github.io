@@ -1,2 +1,2 @@
-# colluratest
- test for bjscollura.com
+# bjscollura.com
+Production static page for bjscollura.com
