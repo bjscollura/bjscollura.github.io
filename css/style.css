@@ -246,6 +246,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  text-align: center;
   /* min-width: 375px; */
   margin: 0 auto;
   /* line-height: .9rem; */
@@ -261,7 +262,7 @@ header {
   align-items: center;
   text-align: center;
   width: 100%;
-  margin: 50px 0 20px 0;
+  margin: 50px 0;
 }
 .study figure,
 .study h2,
@@ -286,6 +287,9 @@ header {
 }
 .footer-container p {
   text-align: center;
+}
+.footer-container hr {
+  margin-bottom: 50px;
 }
 
 /* blockquote */
