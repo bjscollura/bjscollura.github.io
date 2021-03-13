@@ -244,7 +244,8 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  min-width: 1100px;
+  /* min-width: 375px; */
+  margin: 0 auto;
   /* line-height: .9rem; */
   box-shadow: 1px 1px .5em black inset;
   border-radius: 7px;
@@ -256,6 +257,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   width: 100%;
   margin: 50px 0 20px 0;
 }
@@ -340,6 +342,7 @@ figcaption {
   padding: .5rem 2rem;
   text-align: left;
   max-width: 62%;
+  min-width: 80%;
   margin: 100px 0;
 }
 .study-specs strong {
@@ -358,6 +361,17 @@ figcaption {
   justify-content: space-between;
   max-width: 75%;
   text-align: center;
+}
+.casestudy ul {
+  list-style: none;
+}
+.casestudy li::before {
+  content: "■";
+  color: #aaeaaa;
+  display: inline-block; 
+  width: 1rem;
+  margin-left: -1rem
+
 }
 .casestudy h2 {
   color: #aaeaaa;
@@ -395,4 +409,15 @@ h3.casestudy-h {
 }
 h4.casestudy-h {
   margin-bottom: 10px;
+}
+
+.casestudy-bigli {
+  margin: 4rem auto;
+}
+.casestudy-bigli h4::before {
+  content: "▸";
+  color: #aaeaaa;
+  font-size: 32px;
+  margin-left: -50px;
+  margin-right: 10px;
 }
