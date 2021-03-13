@@ -98,6 +98,7 @@ hr {
   border-radius: 7px;
   border: none;
   text-decoration: none;
+  text-align: center;
   font-weight: 700;
   padding: .8rem 1.6rem;
 }
@@ -159,6 +160,7 @@ header {
   font-size: 2.1rem;
   font-family: 'Josefin Sans', sans-serif;
   color:#e4ebe4;
+  line-height: 2.1rem;
 }
 .logo a, .logo a:hover, .logo a:visited, .logo a:active {
   color: #e4ebe4!important;
@@ -312,6 +314,12 @@ blockquote:before {
   align-items: center;
   justify-content: space-between;
 }
+.aboutme-subcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .aboutme-p-container {
   display: flex;
   flex-direction: column;
@@ -359,7 +367,8 @@ figcaption {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  max-width: 75%;
+  width: 80%;
+  max-width: 1200px;
   text-align: center;
 }
 .casestudy ul {
@@ -420,4 +429,70 @@ h4.casestudy-h {
   font-size: 32px;
   margin-left: -50px;
   margin-right: 10px;
+}
+
+
+
+
+
+/* media queries */
+/* Desktop = 1000px+ */
+/* Tablet = 768 - 999px */
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .study-container, .casestudy, .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .aboutme-subcontainer {
+    flex-direction: column;
+  }
+  .aboutme-img-container {
+    width: 90%;
+    margin-top: 50px;
+  }
+  .header-container {
+    padding-left: 25px;
+    padding-right: 25px
+  }
+
+
+}
+
+/* Mobile = 767px and below */
+@media only screen and (max-width: 767px) {
+  body {
+    padding: 200px 0 0 0;
+  }
+  .study-container, .casestudy, .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .aboutme-subcontainer {
+    flex-direction: column;
+  }
+  .aboutme-img-container {
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  /* Header */
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  .logo {
+    width: 90%;
+    text-align: center;
+    margin: .5rem auto .0 auto;
+  }
+  .header-nav {
+    width: 90%;
+    margin: .7rem auto;
+  }
+  .header-links {
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 1rem auto 0 auto;
+  }
 }
