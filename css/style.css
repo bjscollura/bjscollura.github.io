@@ -245,14 +245,12 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
   text-align: center;
   /* min-width: 375px; */
   margin: 0 auto;
   /* line-height: .9rem; */
-  box-shadow: 1px 1px .5em black inset;
-  border-radius: 7px;
-  background-color: #1d1d1c;
+
 }
 
 .study {
@@ -263,11 +261,12 @@ header {
   text-align: center;
   width: 100%;
   margin: 50px 0;
+  padding: 100px 150px 75px 150px;
+  box-shadow: 1px 1px .5em black inset;
+  border-radius: 7px;
+  background-color: #1d1d1c;
 }
-.study figure,
-.study h2,
-.study .study-summary,
-.study .button { 
+.study > * { 
   margin: 30px 0;
 }
 .study p {
@@ -447,6 +446,9 @@ h4.casestudy-h {
     width: 100%;
     max-width: 100%;
   }
+  .study {
+    padding: 100px 25px;
+  }
   .aboutme-subcontainer {
     flex-direction: column;
   }
@@ -464,12 +466,19 @@ h4.casestudy-h {
 
 /* Mobile = 767px and below */
 @media only screen and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
   body {
     padding: 200px 0 0 0;
+
   }
   .study-container, .casestudy, .container {
     width: 100%;
     max-width: 100%;
+  }
+  .study {
+    padding: 100px 25px;
   }
   .aboutme-subcontainer {
     flex-direction: column;
