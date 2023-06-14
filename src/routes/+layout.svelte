@@ -53,7 +53,7 @@
         <a href="https://github.com/bjscollura" class="icon-link" target="_blank">
             <i class="fab fa-github fa-lg"></i></a>
         </span></p>
-        <p>Made from scratch with good ol' HTML5, CSS3, and Javascript, <br> via Github Pages.</p>
+        <p>Made from scratch with good ol' HTML5, CSS3, and Javascript, <br> via Sveltekit and Github Pages.</p>
         <p>Check out my code <a href="https://github.com/bjscollura/bjscollura.github.io" target="_blank">here!</a></p>
     </footer>
 </div>
