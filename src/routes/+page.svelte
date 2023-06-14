@@ -6,7 +6,7 @@
         <h1 class="h1-hero">I speak <strong>person</strong> and <strong>code</strong>.</h1>
       </div>
       <div class="hero-p">
-        <h6>I'm a User Experience Designer, a Web Developer, and a fellow citizen recovering from 2020.</h6>
+        <h6>I'm a User Experience Designer, a Web Developer, and a fellow user of modern technology.</h6>
         <h6>Our digital future is going to be anxious and exciting.</h6>
         <h6>I'd like to help keep it honest and lovely.</h6>
       </div>
