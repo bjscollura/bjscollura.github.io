@@ -163,24 +163,24 @@ hr {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 3rem 0;
   width: 100%;
+  margin-bottom: 4rem;
 }
 .hero-heading {
   flex: 1;
   text-align: center;
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 .h1-hero {
   font-size: 5rem;
-  margin: 5rem 0;
+  margin: 3.5rem 0;
   line-height: 5rem;
 }
 .hero-p {
   flex: 1;
   text-align: center;
   font-size: 1.2rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .hero-button {
   flex: 1;
@@ -225,52 +225,7 @@ hr {
 
 
 
-/* blockquote */
-.quote-container {
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 951px;
-}
-blockquote {
-  border-left: 2px solid #e4ebe4;
-  padding: 3px 10px;
-}
-blockquote:before {
-  content: 	'\201C';
-  position: relative;
-  top: 1rem;
-  left: -50px;
-  display: block;
-  margin-bottom: -1.6rem;
-  font-size: 3rem;
-}
 
-.aboutme-container {
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.aboutme-subcontainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.aboutme-p-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex: 1;
-  margin: 0 25px;
-}
-.aboutme-img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 38%;
-}
 figure img {
   width: 100%;
   display: block;
@@ -379,19 +334,6 @@ h4.casestudy-h {
   .study {
     padding: 100px 25px;
   }
-  .aboutme-subcontainer {
-    flex-direction: column;
-  }
-  .aboutme-img-container {
-    width: 90%;
-    margin-top: 50px;
-  }
-  .header-container {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-
 }
 
 /* Mobile = 767px and below */
@@ -401,7 +343,6 @@ h4.casestudy-h {
   }
   body {
     padding: 200px 0 0 0;
-
   }
   .study-container, .casestudy, .container {
     width: 100%;
@@ -409,33 +350,5 @@ h4.casestudy-h {
   }
   .study {
     padding: 100px 25px;
-  }
-  .aboutme-subcontainer {
-    flex-direction: column;
-  }
-  .aboutme-img-container {
-    width: 90%;
-    margin-top: 50px;
-  }
-
-  /* Header */
-  header {
-    flex-direction: column;
-    height: auto;
-  }
-  .logo {
-    width: 90%;
-    text-align: center;
-    margin: .5rem auto .0 auto;
-  }
-  .header-nav {
-    width: 90%;
-    margin: .7rem auto;
-  }
-  .header-links {
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: 1rem auto 0 auto;
   }
 }
