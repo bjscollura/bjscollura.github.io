@@ -28,7 +28,7 @@
         <p>Perhaps the most important phase in the Design process is the first: research. Who are the people who will be using this product? What are their needs, and what issues do they currently have that could be solved by this Alexa Skill? If we don’t know what the user base's needs are, we cannot begin to design a solution for them.</p>
         <p>In order to most efficiently learn about our users, we investigated them by dividing them into two major buckets: Those who live and interact with the City of Boston, and those who own or interact with an Alexa device. Certainly our primary interest was in those who fit both descriptors, but learning about each separately was still easily extendable to our core user, while remaining feasible within our 3-week constraints.</p>
         <figure>
-          <img src="\images\cob\Research_venndiagram.png" alt="A Venn Diagram between users of Boston.gov and users of Alexa.">
+          <img src="/images/cob/Research_venndiagram.png" alt="A Venn Diagram between users of Boston.gov and users of Alexa.">
           <figcaption>“Boston Info” users are those who interact with the city of Boston, and also with their Amazon Alexa device.</figcaption>
         </figure>
         <p>Though we were not able to leave our homes to find people to research, we still had a number of techniques up our sleeves for reaching out to folks and finding the information we needed to know:</p>
@@ -45,7 +45,7 @@
           <h4 class="casestudy-h">Google Analytics</h4>
           <p>We dug into Boston.gov’s web traffic analytics for any insights or trends that may apply to the skill. We found that Coronavirus Information pages were visited much more than other pages, and ‘Trash & Recycling Schedule’ and ‘Food Trucks Schedule’, which were among the most trafficked pages, were already represented in the Skill.</p>
           <figure>
-            <img src="\images\cob\Research_AnalyticsPieChart.png" alt="A pie chart of the most frequently visited pages on Boston.gov for the year.">
+            <img src="/images/cob/Research_AnalyticsPieChart.png" alt="A pie chart of the most frequently visited pages on Boston.gov for the year.">
             <figcaption>Yearly traffic data from April 1, 2019 to March 31, 2020 - even though the captured data comes mostly from pre-Corona months, Coronavirus News is still the second most trafficked page.</figcaption>
           </figure>
         </div>
@@ -57,7 +57,7 @@
       <div class="casestudy-p">
         <p>With the results of our user research in hand, it was time to set about organizing our thoughts and discovering the most salient problems that our Alexa Skill can solve. One common method for visualizing this qualitative data is to use an “Affinity Map” - a board of written notes, one insight per note, that can be physically rearranged and regrouped to bring common trends to the surface - think of it as panning for gold, sorting through individual notions to collect the larger clumps of common insights. To achieve this while working remotely, we used Miro to create the note board online.</p>
         <figure>
-          <img src="\images\cob\Synthesis_AffinityMap_02.png" alt="A screenshot of our digital Affinity Map, via the online tool Miro.">
+          <img src="/images/cob/Synthesis_AffinityMap_02.png" alt="A screenshot of our digital Affinity Map, via the online tool Miro.">
           <figcaption>Affinity Mapping - Putting all of our research insights onto virtual “sticky notes” and segmenting them into logical groups, to discover actionable trends and patterns.</figcaption>
         </figure>
         <h3 class="casestudy-h">Key Insights</h3>
@@ -101,7 +101,7 @@
           <h4 class="casestudy-h">Conversational Navigation</h4>
           <p>Many of the actions we need to take in an application or website have a related function in conversation. For instance, asking someone, “Could you repeat that?” is akin to going back to a previous page on a visual interface. Importantly, a conversation isn’t a monolog, even when only one person is supplying information: we supply information in digestible bits, and use feedback from the listener to adjust what we’re saying. Accounting for these kinds of feedback adds the interactivity that a typical app would implement with visible buttons and menus.</p>
           <figure>
-            <img src="\images\cob\Design_ConversationNavTable.png" alt="A table of potential actions, and the ways to accomplish them via conversation and via visual interface.">
+            <img src="/images/cob/Design_ConversationNavTable.png" alt="A table of potential actions, and the ways to accomplish them via conversation and via visual interface.">
             <figcaption>For each common need a user would have while interfacing with a visual application, there is an equivalent way to solve that need through conversation, whether with another person or with a voice assistant like Alexa.</figcaption>
           </figure>
           <h4 class="casestudy-h">Agent Persona</h4>
@@ -148,7 +148,7 @@
         <p>The test would run essentially like so: You, the test taker, would join a video call with one of us, the testers. We would share our screen, presenting one of two slideshows, this one just for the participants to see. On it, you’d see a prompt describing a little scenario you’re in, and be tasked to ask Alexa for some information you would need in such a scenario. You would ask her, in your own words.</p>
         <p>Meanwhile, the tester would also have the second slideshow open. This one has the same number of slides, but each slide is composed entirely of links to audio files. These are the Alexa responses, pre-recorded using a text-to-speech tool with Alexa’s tonality, speaking the words we wrote and designed for the skill. When you ask Alexa a question, the tester clicks the appropriate response, and you will hear “Alexa” respond to your question. This continues back and forth for each scenario, all the while being recorded by another tester standing by, taking notes.</p>
         <figure>
-          <img src="\images\cob\Soundboard.png" alt="A diagram of the testing environment, showing an example of our Soundboard.">
+          <img src="/images/cob/Soundboard.png" alt="A diagram of the testing environment, showing an example of our Soundboard.">
           <figcaption>This mock-up shows the scenario the participant would see (left), while the designer has Alexa’s responses on-the-ready on his Soundboard view (right).</figcaption>
         </figure>
         <p>We were as robotic as we could be in searching for certain keywords/phrases to trigger which response (which <strong>Intent</strong>, that is) our users would be given, to approximate how Alexa would choose a proper Intent for a given Utterance.</p>
@@ -157,7 +157,7 @@
         <p>In order to help quantitatively measure the user’s impressions of our prototype, we employed the <a href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html" target="_blank">System Usability Scale</a>, or SUS. This is a standardized 10-question survey given to a participant after our test, asking such questions as “I thought the system was easy to use” on a scale from Strongly Agree to Strongly Disagree. The scale results can be a little tricky to read - the average score is a 68, and anything above about an 80 is considered a very usable system.</p>
         <p>We ran our soundboard test 7 times on the initial version of the skill, plus 6 times on our first iteration on it and 4 times on our second iteration. You can see below that, though the initial version of the skill scored a respectable 70, there was a marked improvement with our final version’s score of 83.5. We do acknowledge that this score cannot fully factor in the experience of using the skill on an actual device, where Alexa’s processing of commands will be different than our own as human testers.</p>
         <figure>
-          <img src="\images\cob\SUSGraph.png" alt="A graph of SUS scores, with our original and redesign scores highlighted to show our progress.">
+          <img src="/images/cob/SUSGraph.png" alt="A graph of SUS scores, with our original and redesign scores highlighted to show our progress.">
           <figcaption>SUS scores, shown as a percentile rank: A score of 70 is more usable than about 55% of systems. A score of 83.5 is more usable than about 90% of systems.</figcaption>
         </figure>
         <p>We also collected a lot of qualitative data from our users’ experience. Some major points are listed here:</p>
@@ -189,7 +189,7 @@
       </div>
 
       <figure>
-        <img src="\images\cob\Alexa_Bookend.jpg" alt="An Amazon Echo device.">
+        <img src="/images/cob/Alexa_Bookend.jpg" alt="An Amazon Echo device.">
         <figcaption></figcaption>
       </figure>
     </div>

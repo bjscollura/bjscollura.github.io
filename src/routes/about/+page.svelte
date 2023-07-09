@@ -1,6 +1,6 @@
 <div class="page-container container">
   <div class="quote-container">
-    <h3>Brian Collura | Fitchburg, MA</h3>
+    <h3>Brian Collura | Greater Boston, MA</h3>
     <p><a href="mailto:bjscollura@gmail.com" target="_blank">bjscollura@gmail.com</a></p>
     <blockquote>
       Yet none could better know than I, <br />
