@@ -2,9 +2,10 @@
     export let url = "#";
     export let text = "Button";
     export let style = 'primary';
+    export let newTab = false;
 </script>
 
-<a href="{url}" target="_blank" class="{style}">
+<a href="{url}" target="{newTab ? '_blank' : '_self'}" class="{style}">
     <div>{text}</div>
 </a>
 
@@ -19,11 +20,11 @@ a {
     padding: .8rem 1.6rem;
 }
 .primary {
-    background-color: #aaeaaa;
-    color: #262620;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
 }
 a > div {
-  color: #262620;
+  color: var(--bg-color);
   position: relative;
   width: 100%;
   height: 100%;

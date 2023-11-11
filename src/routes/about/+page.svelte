@@ -1,4 +1,4 @@
-<div class="page-container container">
+<div class="page-container">
   <div class="quote-container">
     <h3>Brian Collura | Greater Boston, MA</h3>
     <p><a href="mailto:bjscollura@gmail.com" target="_blank">bjscollura@gmail.com</a></p>
@@ -11,7 +11,7 @@
     <p class="quote-signature">~ Alfred Lord Tennyson</p>
   </div>
 
-  <div class="aboutme-container container">
+  <div class="aboutme-container">
     <h3>Looking to learn more?</h3>
     <div class="subcontainer">
       <div class="p-container">

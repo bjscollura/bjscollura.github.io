@@ -1,8 +1,27 @@
 :root {
-  --bg-color: #262620;
+  --color-old-bg: #262620;
+  --color-old-fg: #e4ebe4;
+  --color-old-primary: #aaeaaa;
+  --color-old-secondary: #aaeaaa;
+  --color-old-accent: #aaeaaa;
+  --color-dark-bg: #151c23;
+  --color-dark-fg: #f4f4f1;
+  --color-dark-primary: #bff2d3;
+  --color-dark-secondary: #e9dea5;
+  --color-dark-accent: #506D69;
+  --color-light-bg: #e9e9e2;
+  /* --color-light-fg: #2e3837; */
+  --color-light-fg: #232929;
+  --color-light-primary: #6fa590;
+  --color-light-secondary: #e9dea5;
+  --color-light-accent: #94cacc;
+  
+  --bg-color: var(--color-dark-bg);
+  --fg-color: var(--color-dark-fg);
+  --primary-color: var(--color-dark-primary);
+  --secondary-color: var(--color-dark-secondary);
+  --accent-color: var(--color-dark-accent);
 }
-
-/* Main */
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +31,8 @@ html {
   font-size: 18px;
 }
 body {
-  background-color: #262620;
-  color: #e4ebe4;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
   font-family: 'Montserrat', sans-serif;
   line-height: 1.7rem;
   padding: 120px 50px 20px 50px;
@@ -74,55 +93,36 @@ p {
   line-height: 1.6rem;
 }
 p a {
-  color: #aaeaaa;
+  color: var(--primary-color);
 }
 p a:hover {
   text-decoration: underline;
   opacity: .8;
 }
 p a:visited {
-  color: #aaeaaa;
+  color: var(--primary-color);
 }
 
 strong {
-  color: #aaeaaa;
+  color: var(--primary-color);
   font-weight: 700;
 }
 
 hr {
-  border-top: 1px solid #aaeaaa;
+  border-top: 1px solid var(--primary-color);
   border-right: 0;
   border-left: 0;
   border-bottom: 0;
   margin: 100px auto;
   width: 85%;
 }
-.container {
-  display: flex;
-  padding: 50px 20px 20px 20px;
-}
 
 .icon-link {
-  color: #e4ebe4;
+  color: var(--fg-color);
 }
 .icon-link:visited {
-  color: #e4ebe4;
+  color: var(--fg-color);
 }
-
-
-
-.logo {
-  width: 33.3%;
-  font-size: 2.1rem;
-  font-family: 'Josefin Sans', sans-serif;
-  color:#e4ebe4;
-  line-height: 2.1rem;
-}
-.logo a, .logo a:hover, .logo a:visited, .logo a:active {
-  color: #e4ebe4!important;
-}
-
-
 
 /* Page content */
 .page-container {
@@ -186,7 +186,7 @@ hr {
   padding: 100px 150px 75px 150px;
   box-shadow: 1px 1px .5em black inset;
   border-radius: 7px;
-  background-color: #1d1d1c;
+  background-color: #0b0e10;
 }
 .study > * { 
   margin: 30px 0;
@@ -212,8 +212,8 @@ figcaption {
 
 /* Case Study */
 .study-specs {
-  background-color: #e4ebe4;
-  color: #262620;
+  background-color: var(--fg-color);
+  color: var(--bg-color);
   border-radius: 1rem;
   padding: .5rem 2rem;
   text-align: left;
@@ -222,12 +222,12 @@ figcaption {
   margin: 100px 0;
 }
 .study-specs strong {
-  color: #262620;
+  color: var(--accent-color);
   font-weight: bold;
 }
 .study-specs hr {
   margin: 25px auto;
-  border-top: 1px solid #545454;
+  border-top: 1px solid var(--accent-color);
 }
 
 .casestudy {
@@ -244,19 +244,19 @@ figcaption {
 }
 .casestudy li::before {
   content: "\25a0";
-  color: #aaeaaa;
+  color: var(--primary-color);
   display: inline-block; 
   width: 1rem;
   margin-left: -1rem
 
 }
 .casestudy h2 {
-  color: #aaeaaa;
+  color: var(--primary-color);
 }
 .casestudy-thesus {
   margin: 20px 0 100px 0;
   padding: 30px 30px 75px 30px;
-  border: 2px solid #aaeaaa;
+  border: 2px solid var(--primary-color);
   border-radius: 7px;
 }
 
@@ -277,7 +277,7 @@ figcaption {
 .casestudy-p figure {
   margin: 60px 0 60px 0;
   padding: 30px;
-  border: 2px solid #aaeaaa;
+  border: 2px solid var(--primary-color);
   border-radius: 7px;
 }
 h3.casestudy-h {
@@ -293,7 +293,7 @@ h4.casestudy-h {
 }
 .casestudy-bigli h4::before {
   content: "\25B8";
-  color: #aaeaaa;
+  color: var(--primary-color);
   font-size: 32px;
   margin-left: -50px;
   margin-right: 10px;
@@ -303,7 +303,7 @@ h4.casestudy-h {
 /* Desktop = 1000px+ */
 /* Tablet = 768 - 999px */
 @media only screen and (min-width: 768px) and (max-width: 999px) {
-  .study-container, .casestudy, .container {
+  .study-container, .casestudy {
     width: 100%;
     max-width: 100%;
   }
@@ -320,7 +320,7 @@ h4.casestudy-h {
   body {
     padding: 200px 0 0 0;
   }
-  .study-container, .casestudy, .container {
+  .study-container, .casestudy {
     width: 100%;
     max-width: 100%;
   }
